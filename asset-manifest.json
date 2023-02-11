@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kazprom-test/static/css/main.1bedca4c.css",
+    "main.js": "/kazprom-test/static/js/main.92551f36.js",
+    "static/js/787.44510947.chunk.js": "/kazprom-test/static/js/787.44510947.chunk.js",
+    "index.html": "/kazprom-test/index.html",
+    "main.1bedca4c.css.map": "/kazprom-test/static/css/main.1bedca4c.css.map",
+    "main.92551f36.js.map": "/kazprom-test/static/js/main.92551f36.js.map",
+    "787.44510947.chunk.js.map": "/kazprom-test/static/js/787.44510947.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bedca4c.css",
+    "static/js/main.92551f36.js"
+  ]
+}
