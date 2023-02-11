@@ -20,7 +20,7 @@ export const App = () => {
     const onClickDeleteTaskModal = () => {
         setError('')
         const checked = tasks.filter(t => t.taskCheck)
-        if(!checked.length) return setError('Для удаления требуется выбрать элемент списка!')
+        if (!checked.length) return setError('Для удаления требуется выбрать элемент списка!')
         setIsDeleteTaskModal(!isDeleteTaskModal)
     }
 
@@ -33,11 +33,14 @@ export const App = () => {
                     </IconButton>
                 </Toolbar>
             </AppBar>
-            <div>
-                <Paper style={{padding: '15px'}}>
-                    {tasks.map(t => <Task key={t.taskId} taskId={t.taskId} text={t.text} taskCheck={t.taskCheck}/>)}
-                </Paper>
-            </div>
+            {
+                tasks.length ? <div>
+                        <Paper style={{padding: '15px'}}>
+                            {tasks.map(t => <Task key={t.taskId} taskId={t.taskId} text={t.text} taskCheck={t.taskCheck}/>)}
+                        </Paper>
+                    </div>
+                    : ''
+            }
             <div className={styles.buttonContainer}>
                 <Button variant="contained">Тест GraphQL</Button>
                 <Button variant="contained" onClick={onClickAddTaskModal}>Добавить</Button>
